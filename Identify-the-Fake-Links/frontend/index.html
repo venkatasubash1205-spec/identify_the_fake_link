@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Identify the Fake Links</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="logo">🔐</div>
+    <h1>Identify the Fake Links</h1>
+    <p class="subtitle">Smart URL Analysis & Phishing Detection System</p>
+
+    <label class="input-title" for="urlInput">🔗 Paste your website URL</label>
+    <div class="input-area">
+        <input id="urlInput" type="text" placeholder="https://example.com">
+        <button id="checkBtn">🔍 Analyze URL</button>
+    </div>
+    <div class="examples">
+        <span>Try:</span>
+        <button class="chip" data-url="https://www.wikipedia.org">wikipedia.org</button>
+        <button class="chip" data-url="http://192.168.10.5/login/verify-account">IP + login</button>
+        <button class="chip" data-url="http://paypa1-secure-login.verify-account.xyz/update?id=%20">fake PayPal</button>
+        <button class="clear-btn" id="clearBtn">Clear</button>
+    </div>
+
+    <div id="result" class="result">
+        <h2 id="resultTitle" class="result-title"></h2>
+        <div id="urlDisplay" class="url-display"></div>
+
+        <div class="details-grid">
+            <div><b>🌐 Domain</b><span id="domain">-</span></div>
+            <div><b>🌍 IP Address</b><span id="ip">-</span></div>
+            <div><b>📍 Location</b><span id="location">-</span></div>
+            <div><b>🏢 Organization</b><span id="organization">-</span></div>
+            <div><b>📅 Domain Age</b><span id="domainAge">-</span></div>
+            <div><b>🔐 SSL / HTTPS</b><span id="ssl">-</span></div>
+        </div>
+
+        <div id="score" class="score"></div>
+        <div class="progress-container"><div id="progress"></div></div>
+
+        <h3 class="section-title">🔎 Security Checks</h3>
+        <ul id="checks" class="checks"></ul>
+
+        <div class="info-box">
+            ⚠️ This system provides a URL risk assessment. It does not guarantee that a website is completely safe.
+            Never enter passwords, OTPs, or payment information into a suspicious website.
+        </div>
+    </div>
+
+    <div class="footer">Identify the Fake Links © 2026</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

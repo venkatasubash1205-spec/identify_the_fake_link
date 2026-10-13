@@ -1,0 +1,5 @@
+# Local blacklist: one domain per line. Lines starting with # are ignored.
+# A match adds +60 to the risk score. Add your own entries below.
+# (Entries are matched against the host and its parent domains.)
+phishing-test.example
+fake-bank-login.example
